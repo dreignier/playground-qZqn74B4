@@ -1,1 +1,1 @@
-@[My first snipper]({"stubs":["part1.01.js"], "command":"part1.01.js"})
+@[My first snippet]({"stubs":["part1.01.js"], "command":"node part1.01.js"})
