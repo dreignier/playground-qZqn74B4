@@ -2,9 +2,9 @@ title : Javascript promises. Mastering the asynchronous.
 
 plan:
     - title: What is asynchronous in javascript
-    statement: markdowns/part1.md
+      statement: markdowns/part1.md
 
 projects:
-    npm-runner:
+    node-npm-runner:
         root: /snippets
         runner: techio/node-npm-runner
