@@ -14,4 +14,12 @@ The second example of asynchronous code in Javascript is by using `setInterval`:
 
 `setInterval` has the same behavior as `setTimeout` but the code is executed multiple times. You have to call `clearInterval` to kill the timer.
 
-`setTimeout` and `setInterval` are the only native functions of the Javascript to execute some code asynchronously. But if you are familiar with Javascript, you already dealt with asynchronous in differents ways. This is the next lesson.
+`setTimeout` and `setInterval` are the only native functions of the Javascript to execute some code asynchronously. But if you are familiar with Javascript, you already dealt with asynchronous in differents ways. It can happen in multiple situations (non exhaustive list):
+
+* Doing an http request
+* Any I/O operation when you are in a NodeJS environment
+* Dealing with a WebSocket (client or server side)
+
+For example, the following code is asynchronous (reading a file with NodeJS):
+
+@[Read a file content in NodeJS]({"stubs":["part1.04.js"], "command":"node part1.04.js"})

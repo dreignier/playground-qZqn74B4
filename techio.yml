@@ -2,13 +2,11 @@ title : Javascript promises. Mastering the asynchronous.
 
 plan:
   - title: What is asynchronous in Javascript
-    description: How to do asynchronous code in Javascript
-    plan:
-      - title: Native asynchronous code
-        statement: markdowns/part1.md
-      - title: Non native asynchronous code
-        statement: markdowns/part2.md
-
+    statement: markdowns/part1.md
+  - title: Why do we need asynchronous ?
+    statement: markdowns/part2.md
+  - title: The challenges of the asynchronous
+    statement: markdowns/part3.md
 projects:
   node-npm-runner:
     root: /snippets
