@@ -1,13 +1,17 @@
-let counter = 0;
-
-let timer = setInterval(function() {
+setTimeout(function() {
     console.log('I am an asynchronous message');
+}); // You can omit the 0
 
-    counter += 1;
+console.log('Test 1');
 
-    if (counter >= 5) {
-        clearInterval(timer);
-    }
-}, 1000);
+for (let i = 0; i < 10000; ++i) {
+    doSomeStuff();
+}
 
-console.log('I am a synchronous message');
+console.log('Test 2');
+
+// The 'I am an asynchronous message' will be displayed when the main thread reach here
+
+function doSomeStuff() {
+    return 1 + 1;
+}
