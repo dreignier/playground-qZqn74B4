@@ -1,5 +1,1 @@
-?[What is the answer to Life, the Universe and Everything?]
--[ ] There is no answer to that!
--[ ] Sleep and eat
--[x] Easy, this is 42
--[ ] Peace & Love
+@[My first snipper]({"stubs":["part1.01.js"], "command":"part1.01.js"})
