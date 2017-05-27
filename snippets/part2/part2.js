@@ -5,15 +5,19 @@ let app = express();
 
 app.get('/part2.html', function(req, res) {
     // Give the file directly
-    fs.readFile('part2.html', function(error, data) {
-        res.type('html').send(data).end();
+    fs.readFile('part2.html', 'utf8', function(error, data) {
+        if (error) {
+            res.type('text').send(error).end();
+        } else {
+            res.type('html').send(data).end();
+        }
     });
 });
 
 app.get('/part2.content.html', function(req, res) {
     // Wait 5 seconds and then give the file
     setTimeout(function() {
-        fs.readFile('part2.content.html', function(error, data) {
+        fs.readFile('part2.content.html', 'utf8', function(error, data) {
             res.type('html').send(data).end();
         });
     }, 5000);
@@ -21,4 +25,4 @@ app.get('/part2.content.html', function(req, res) {
 
 app.listen(8888);
 
-console.log('TECHIO> open -p 8888 part2.html');
+console.log('TECHIO> open -p 8888 /part2.html');
