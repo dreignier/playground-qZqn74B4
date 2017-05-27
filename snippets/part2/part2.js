@@ -6,11 +6,7 @@ let app = express();
 app.get('/part2.html', function(req, res) {
     // Give the file directly
     fs.readFile('part2/part2.html', 'utf8', function(error, data) {
-        if (error) {
-            res.type('text').send(error).end();
-        } else {
-            res.type('html').send(data).end();
-        }
+        res.type('html').send(data).end();
     });
 });
 
