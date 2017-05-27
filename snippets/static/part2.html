@@ -4,12 +4,12 @@
     </head>
 
     <body>
-        <button id="sync">Synchronous button</button>
+        <button id="sync" onclick="sync()">Synchronous button</button>
         <br />
-        <button id="async">Asynchronous button</button>
+        <button id="async" onclick="async()">Asynchronous button</button>
 
         <script type="text/javascript">
-            function sync() {
+            function job() {
                 // Big data processing
                 var array = [];
                 for (var i = 0; i < 1000000; ++i) {
@@ -17,20 +17,13 @@
                 }
             }
 
-            function async() {
-                setTimeout(function() {
-                    // Big data processing
-                    var array = [];
-                    for (var i = 0; i < 1000000; ++i) {
-                        array.push(i);
-                    }
-                });
+            function sync() {
+                job();
             }
 
-            document.addEventListener('DOMContentLoaded', function() {
-                document.getElementById('sync').addEventListener('click', sync);
-                document.getElementById('async').addEventListener('click', async);
-            });
+            function async() {
+                setTimeout(job);
+            }
         </script>
     </body>
 </html>
