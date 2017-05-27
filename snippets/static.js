@@ -1,0 +1,1 @@
+console.log('TECHIO> open -s ' + process.argv[2]);
