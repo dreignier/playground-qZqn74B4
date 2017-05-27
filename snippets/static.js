@@ -1,1 +1,1 @@
-console.log('TECHIO> open -s static ' + process.argv[2]);
+console.log('TECHIO> open -s static static/' + process.argv[2]);
