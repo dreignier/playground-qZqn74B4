@@ -8,11 +8,15 @@ You can try to modify the displayed messages or the time given at the `setTimeou
 
 What can we learn from this ? A simple thing: never trust the delay given to the `setTimeout` function. Even if you give a `0` delay, your code can be executed far more later. You just give a minimum delay.
 
+MDN documentation of `setTimeout`: https://developer.mozilla.org/fr/docs/Web/API/WindowTimers/setTimeout
+
 The second example of asynchronous code in Javascript is by using `setInterval`:
 
 @[Asynchronous code using setInterval]({"stubs":["part1.03.js"], "command":"node part1.03.js"})
 
 `setInterval` has the same behavior as `setTimeout` but the code is executed multiple times. You have to call `clearInterval` to kill the timer.
+
+MDN documentation of `setInterval`: https://developer.mozilla.org/fr/docs/Web/API/WindowTimers/setInterval
 
 `setTimeout` and `setInterval` are the only native functions of the Javascript to execute some code asynchronously. But if you are familiar with Javascript, you already dealt with asynchronous in differents ways. It can happen in multiple situations (non exhaustive list):
 

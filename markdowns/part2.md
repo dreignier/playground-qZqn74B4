@@ -2,4 +2,6 @@ Asynchronous is not just an obscure Javascript magicians concept. We need it for
 
 @[Why we need asynchronous]({"layout": "aside", "stubs": ["part2/part2.html"], "command": "node part2/part2.js"})
 
+The given example use [jQuery](http://jquery.com/) to perform the http request.
+
 In the future, synchronous http requests will be not supported anymore by browsers. Dealing with asynchronous is just a must have in Javascript world.
