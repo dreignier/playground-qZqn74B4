@@ -1,3 +1,3 @@
 Asynchronous is not just an obscure Javascript magicians concept. We need it for a good reason. Take the following example. One button is a synchronous code and the other button is an asynchronous code. As you can see, when you click on the first button, the user interface just freeze during the code execution. This is because the main thread can't execute the code and refresh the user interface at the same time. When you click on the second button, the main thread finish its job with the user interface and then the code is executed.
 
-@[Why we need asynchronous]({"layout": "aside", "stubs": ["part2.html"], "command": "node static.js static/part2.html"})
+@[Why we need asynchronous]({"layout": "aside", "stubs": ["static/part2.html"], "command": "node static.js part2.html"})
