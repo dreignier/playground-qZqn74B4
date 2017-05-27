@@ -5,7 +5,7 @@ let app = express();
 
 app.get('/part2.html', function(req, res) {
     // Give the file directly
-    fs.readFile('part2.html', 'utf8', function(error, data) {
+    fs.readFile('part2/part2.html', 'utf8', function(error, data) {
         if (error) {
             res.type('text').send(error).end();
         } else {
@@ -17,7 +17,7 @@ app.get('/part2.html', function(req, res) {
 app.get('/part2.content.html', function(req, res) {
     // Wait 5 seconds and then give the file
     setTimeout(function() {
-        fs.readFile('part2.content.html', 'utf8', function(error, data) {
+        fs.readFile('part2/part2.content.html', 'utf8', function(error, data) {
             res.type('html').send(data).end();
         });
     }, 5000);
