@@ -4,25 +4,29 @@
     </head>
 
     <body>
-        <button id="sync" onclick="sync();">Synchronous button</button>
+        <button id="sync" onclick="request(false);">Synchronous button</button>
         <br />
-        <button id="async" onclick="async();">Asynchronous button</button>
+        <button id="async" onclick="request(true);">Asynchronous button</button>
+
+        <div id="content">
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
 
         <script type="text/javascript">
-            function job() {
-                // Big data processing simulation
-                // Active wait for 5 seconds
-                var now = new Date().getTime();
-                while (new Date().getTime() - now < 5000);
-                console.log('Job finished');
-            }
+            function request(async) {
+                var content = $('#content');
 
-            function sync() {
-                job();
-            }
+                content.empty();
 
-            function async() {
-                setTimeout(job);
+                $.ajax({
+                    url: 'part2.content.html',
+                    async: async,
+                    success: function(data) {
+                        content.text(data);
+                    }
+                });
             }
         </script>
     </body>
