@@ -1,10 +1,36 @@
 <!doctype html>
 <html>
     <head>
-        <title>My title</title>
     </head>
 
     <body>
-        <h1>Plouf plouf</h1>
+        <button id="sync">Synchronous button</button>
+        <br />
+        <button id="async">Asynchronous button</button>
+
+        <script type="text/javascript">
+            function sync() {
+                // Big data processing
+                var array = [];
+                for (var i = 0; i < 1000000; ++i) {
+                    array.push(i);
+                }
+            }
+
+            function async() {
+                setTimeout(function() {
+                    // Big data processing
+                    var array = [];
+                    for (var i = 0; i < 1000000; ++i) {
+                        array.push(i);
+                    }
+                });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('sync').addEventListener('click', sync);
+                document.getElementById('async').addEventListener('click', async);
+            });
+        </script>
     </body>
 </html>
