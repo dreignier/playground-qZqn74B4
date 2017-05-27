@@ -1,1 +1,1 @@
-console.log('TECHIO> open -s /project/answer/snippets/static ' + process.argv[2]);
+console.log('TECHIO> open -s /project/target/snippets/static ' + process.argv[2]);
