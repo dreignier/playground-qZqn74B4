@@ -1,0 +1,10 @@
+{
+  "name": "javascript-promises-mastering-the-asynchronous",
+  "version": "0.1.0",
+  "main": "static.js",
+  "repository": "",
+  "author": "Magus",
+  "dependencies": {
+    "express": "~4.13.3"
+  }
+}
