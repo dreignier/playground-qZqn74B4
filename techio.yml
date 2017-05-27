@@ -5,8 +5,12 @@ plan:
     statement: markdowns/part1.md
   - title: Why do we need asynchronous ?
     statement: markdowns/part2.md
-  - title: The challenges of the asynchronous
+  - title: Quick quizz
     statement: markdowns/part3.md
+  - title: Some excercices
+    statement: markdowns/part4.md
+  - title: The challenges of the asynchronous
+    statement: markdowns/part5.md
 projects:
   node-npm-runner:
     root: /snippets
