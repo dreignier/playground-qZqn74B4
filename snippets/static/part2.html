@@ -4,17 +4,17 @@
     </head>
 
     <body>
-        <button id="sync" onclick="sync()">Synchronous button</button>
+        <button id="sync" onclick="sync();">Synchronous button</button>
         <br />
-        <button id="async" onclick="async()">Asynchronous button</button>
+        <button id="async" onclick="async();">Asynchronous button</button>
 
         <script type="text/javascript">
             function job() {
-                // Big data processing
-                var array = [];
-                for (var i = 0; i < 1000000; ++i) {
-                    array.push(i);
-                }
+                // Big data processing simulation
+                // Active wait for 5 seconds
+                var now = new Date().getTime();
+                while (now - (new Date().getTime()) < 5000);
+                console.log('Job finished');
             }
 
             function sync() {
