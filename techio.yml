@@ -7,7 +7,7 @@ plan:
     statement: markdowns/part2.md
   - title: Quick quizz
     statement: markdowns/part3.md
-  - title: Some excercices
+  - title: Some pratice
     statement: markdowns/part4.md
   - title: The challenges of the asynchronous
     statement: markdowns/part5.md
