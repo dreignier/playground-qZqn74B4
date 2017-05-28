@@ -1,5 +1,4 @@
-let job = require('./code.js');
-    success = true;
+let success = true;
 
 function now() {
     return new Date().getTime();
@@ -64,3 +63,5 @@ setTimeout(function() {
 
     console.log('TECHIO> success ' + success);
 }, 6000);
+
+require('./code.js')(callback1, callback2);
