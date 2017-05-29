@@ -84,4 +84,4 @@ function done() {
 }
 ```
 
-With more and more asynchronous codes and features in the recents frameworks, we need something to rule it. And here comes our savior: the Promise object.
+With more and more asynchronous codes and features in the recents frameworks, we need something to rule it. And here comes our savior: the Promise class.

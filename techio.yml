@@ -11,6 +11,8 @@ plan:
     statement: markdowns/part4.md
   - title: The challenges of the asynchronous
     statement: markdowns/part5.md
+  - title: The Promise class
+    statement: markdowns/part6.md
 projects:
   node-npm-runner:
     root: /snippets
