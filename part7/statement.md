@@ -14,6 +14,6 @@ You can still bind multiples `then`:
 
 @[When an error happen with multiple callbacks]({"stubs":["code4.js"], "command":"node code4.js", "project":"part7"})
 
-`resolve` and `reject` can be called multiple times. The callbacks bound with `then` are call each time:
+You can't call `resolve` or `reject` multiple times:
 
-@[When an error happen with multiple callbacks]({"stubs":["code5.js"], "command":"node code5.js", "project":"part7"})
+@[Calling resolve multiple times]({"stubs":["code5.js"], "command":"node code5.js", "project":"part7"})

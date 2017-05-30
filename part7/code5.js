@@ -1,23 +1,12 @@
 var promise = new Promise(function(resolve, reject) {
-    counter = 0;
-
-    var timer = setInterval(function() {
-        counter += 1;
-
-        if (counter % 2) {
-            resolve('hello world ' + counter);
-        } else {
-            reject('we are all going to die ' + counter);
-        }
-
-        if (counter >= 5) {
-            clearInterval(timer);
-        }
+    setTimeout(function() {
+        resolve('hello world 1');
+        resolve('hello world 2');
+        resolve('hello world 3');
+        resolve('hello world 4');
     }, 1000);
 });
 
 promise.then(function success(data) {
     console.log(data);
-}, function error(data) {
-    console.error(data);
 });
