@@ -2,18 +2,24 @@ title : Javascript promises. Mastering the asynchronous.
 
 plan:
   - title: What is asynchronous in Javascript
-    statement: markdowns/part1.md
+    statement: part1/statement.md
   - title: Why do we need asynchronous ?
-    statement: markdowns/part2.md
+    statement: part2/statement.md
   - title: Quick quizz
-    statement: markdowns/part3.md
+    statement: part3/statement.md
   - title: Some pratice
-    statement: markdowns/part4.md
+    statement: part4/statement.md
   - title: The challenges of the asynchronous
-    statement: markdowns/part5.md
+    statement: part5/statement.md
   - title: The Promise class
-    statement: markdowns/part6.md
+    statement: part6/statement.md
 projects:
-  node-npm-runner:
-    root: /snippets
+  part1:
+    root: /part1
+    runner: techio/node-npm-runner
+  part2:
+    root: /part2
+    runner: techio/node-npm-runner
+  part4:
+    root: /part4
     runner: techio/node-npm-runner
