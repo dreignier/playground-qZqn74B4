@@ -24,4 +24,4 @@ app.listen(8888);
 console.log('TECHIO> open -p 8888 /code.html');
 
 // Automatic success
-console.log('TECHIO> success true');
+// console.log('TECHIO> success true');
