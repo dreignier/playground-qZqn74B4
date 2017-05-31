@@ -14,6 +14,6 @@ You can still bind multiples `then`:
 
 @[When an error happen with multiple callbacks]({"stubs":["code4.js"], "command":"node code4.js", "project":"part7"})
 
-You can't call `resolve` or `reject` multiple times:
+You can call `resolve` and `reject` multiple times. But this is useless. Once a promise is finished, it can't restart.
 
 @[Calling resolve multiple times]({"stubs":["code5.js"], "command":"node code5.js", "project":"part7"})

@@ -32,7 +32,7 @@ let counter2 = 0,
 function callback2() {
     if (counter2 >= 3) {
         success = false;
-        console.log('TECHIO> message callback1 called more than three times');
+        console.log('TECHIO> message callback2 called more than three times');
     }
 
     counter2 += 1;

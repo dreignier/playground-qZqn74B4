@@ -15,6 +15,8 @@ plan:
     statement: part6/statement.md
   - title: Your first codes with promises
     statement: part7/statement.md
+  - title: It's time to pratice with promises
+    statement: part8/statement.md
 projects:
   part1:
     root: /part1
@@ -27,4 +29,7 @@ projects:
     runner: techio/node-npm-runner
   part7:
     root: /part7
+    runner: techio/node-npm-runner
+  part8:
+    root: /part8
     runner: techio/node-npm-runner
