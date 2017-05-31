@@ -3,8 +3,8 @@ title : Javascript promises. Mastering the asynchronous.
 plan:
   - title: What is asynchronous in Javascript
     statement: part1/statement.md
-  - title: Why do we need asynchronous ?
-    statement: part2/statement.md
+  # - title: Why do we need asynchronous ?
+    # statement: part2/statement.md
   - title: Quick quizz
     statement: part3/statement.md
   - title: Some pratice
@@ -21,9 +21,9 @@ projects:
   part1:
     root: /part1
     runner: techio/node-npm-runner
-  part2:
-    root: /part2
-    runner: techio/node-npm-runner
+  # part2:
+  #   root: /part2
+  #   runner: techio/node-npm-runner
   part4:
     root: /part4
     runner: techio/node-npm-runner
