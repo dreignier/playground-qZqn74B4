@@ -7,8 +7,8 @@ plan:
     # statement: part2/statement.md
   - title: Quick quizz
     statement: part3/statement.md
-  - title: Some pratice
-    statement: part4/statement.md
+  # - title: Some pratice
+  #   statement: part4/statement.md
   - title: The challenges of the asynchronous
     statement: part5/statement.md
   - title: The Promise class
@@ -24,9 +24,9 @@ projects:
   # part2:
   #   root: /part2
   #   runner: techio/node-npm-runner
-  part4:
-    root: /part4
-    runner: techio/node-npm-runner
+  # part4:
+  #   root: /part4
+  #   runner: techio/node-npm-runner
   part7:
     root: /part7
     runner: techio/node-npm-runner
