@@ -33,7 +33,7 @@ promise.then(function(data) {
     called = true;
 });
 
-setTimeout(function(0) {
+setTimeout(function() {
     if (!called) {
         success = false;
         console.log('TECHIO> message Promise never resolved');
