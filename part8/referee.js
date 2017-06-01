@@ -9,7 +9,7 @@ if (!promise) {
 } else if (!isObject(promise)) {
     success = false;
     console.log('TECHIO> message The result is not an object');
-} else if (!_.isFunction(promise.then)) {
+} else if (!isFunction(promise.then)) {
     success = false;
     console.log('TECHIO> message The result is not a promise');
 }
@@ -45,6 +45,11 @@ setTimeout(function() {
 function isObject(obj) {
     let type = typeof obj;
     return type === 'function' || type === 'object' && !!obj;
+}
+
+function isFunction(obj) {
+    let type = typeof obj;
+    return type === 'function' && !!obj;
 }
 
 function now() {
