@@ -12,26 +12,26 @@ if (!promise) {
 } else if (!isFunction(promise.then)) {
     success = false;
     console.log('TECHIO> message The result is not a promise');
-}
-
-promise.then(function(data) {
-    if (data !== 'hello world') {
-        success = false;
-        console.log('TECHIO> message Data is not "hello world"');
-    } else {
-        let time = now() - start;
-
-        if (time < 1800) {
+} else {
+    promise.then(function(data) {
+        if (data !== 'hello world') {
             success = false;
-            console.log('TECHIO> message Promise resolved to early');
-        } else if (time > 2200) {
-            success = false;
-            console.log('TECHIO> message Promise resolved to late');
+            console.log('TECHIO> message Data is not "hello world"');
+        } else {
+            let time = now() - start;
+
+            if (time < 1800) {
+                success = false;
+                console.log('TECHIO> message Promise resolved to early');
+            } else if (time > 2200) {
+                success = false;
+                console.log('TECHIO> message Promise resolved to late');
+            }
         }
-    }
 
-    called = true;
-});
+        called = true;
+    });
+}
 
 setTimeout(function() {
     if (!called) {
