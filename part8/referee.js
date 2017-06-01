@@ -18,7 +18,7 @@ promise.then(function(data) {
     if (data !== 'hello world') {
         success = false;
         console.log('TECHIO> message Data is not "hello world"');
-    } else if {
+    } else {
         let time = now() - start;
 
         if (time < 1800) {
