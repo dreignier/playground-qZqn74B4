@@ -16,7 +16,7 @@ if (!promise) {
     promise.then(function(data) {
         if (data !== 'hello world') {
             success = false;
-            console.log('TECHIO> message Data is not "hello world"');
+            console.log('TECHIO> message Data is not \'hello world\'');
         } else {
             let time = now() - start;
 
@@ -34,7 +34,7 @@ if (!promise) {
 }
 
 setTimeout(function() {
-    if (!called) {
+    if (success && !called) {
         success = false;
         console.log('TECHIO> message Promise never resolved');
     }
