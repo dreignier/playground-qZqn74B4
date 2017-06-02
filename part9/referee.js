@@ -39,9 +39,9 @@ function test(value, delay, resolved, expected) {
         .then(function(data) {
             if (resolved) {
                 if (data === expected) {
-                    console.log('TECHIO> message Given data is ' + data + ' but it should be ' + expected);
-                } else {
                     success = true;
+                } else {
+                    console.log('TECHIO> message Given data is ' + data + ' but it should be ' + expected);
                 }
             } else {
                 console.log('TECHIO> message Promise is resolved but it should be rejected');
@@ -51,9 +51,9 @@ function test(value, delay, resolved, expected) {
         .catch(function(data) {
             if (!resolved) {
                 if (data === expected) {
-                    console.log('TECHIO> message Given data is ' + data + ' but it should be ' + expected);
-                } else {
                     success = true;
+                } else {
+                    console.log('TECHIO> message Given data is ' + data + ' but it should be ' + expected);
                 }
             } else {
                 console.log('TECHIO> message Promise is rejected but it should be resolved');
