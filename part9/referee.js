@@ -46,9 +46,9 @@ function test(value, delay, resolved, data) {
 
         .catch(function(data) {
             if (!resolved) {
-                console.log('TECHIO> message Promise is rejected but it should be resolved');
-            } else {
                 success = true;
+            } else {
+                console.log('TECHIO> message Promise is rejected but it should be resolved');
             }
         })
 
