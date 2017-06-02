@@ -7,7 +7,7 @@ test('test', 0, false, 'error')
 })
 
 .then(function() {
-    return test(6, 2000, false, 'even');
+    return test(6, 2000, true, 'even');
 })
 
 .then(function() {
