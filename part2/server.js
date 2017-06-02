@@ -22,3 +22,6 @@ app.get('/content.html', function(req, res) {
 app.listen(8888);
 
 console.log('TECHIO> open -p 8888 /code.html');
+
+// Automatic success
+console.log('TECHIO> success true');
