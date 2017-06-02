@@ -19,7 +19,7 @@ test('test', 0, false, 'error')
 });
 
 
-function test(value, delay, resolved, data) {
+function test(value, delay, resolved, expected) {
     return new Promise(function(resolve, reject) {
         console.log('TECHIO> message Testing with data ' + value + ' (' + (typeof value) + ')');
 
@@ -38,7 +38,11 @@ function test(value, delay, resolved, data) {
 
         .then(function(data) {
             if (resolved) {
-                success = true;
+                if (data === expected) {
+                    console.log('TECHIO> message Given data is ' + data + ' but it should be ' + expected);
+                } else {
+                    success = true;
+                }
             } else {
                 console.log('TECHIO> message Promise is resolved but it should be rejected');
             }
@@ -46,7 +50,11 @@ function test(value, delay, resolved, data) {
 
         .catch(function(data) {
             if (!resolved) {
-                success = true;
+                if (data === expected) {
+                    console.log('TECHIO> message Given data is ' + data + ' but it should be ' + expected);
+                } else {
+                    success = true;
+                }
             } else {
                 console.log('TECHIO> message Promise is rejected but it should be resolved');
             }
