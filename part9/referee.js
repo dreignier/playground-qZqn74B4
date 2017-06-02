@@ -39,7 +39,11 @@ function test(value, delay, resolved, expected) {
         .then(function(data) {
             if (resolved) {
                 if (data === expected) {
-                    success = true;
+                    if (Math.abs(now() - start - delay) < 200) {
+                        success = true;
+                    } else {
+                        console.log('TECHIO> message Promise is resolved too soon or too late');
+                    }
                 } else {
                     console.log('TECHIO> message Given data is ' + data + ' but it should be ' + expected);
                 }
@@ -51,7 +55,11 @@ function test(value, delay, resolved, expected) {
         .catch(function(data) {
             if (!resolved) {
                 if (data === expected) {
-                    success = true;
+                    if (Math.abs(now() - start - delay) < 200) {
+                        success = true;
+                    } else {
+                        console.log('TECHIO> message Promise is rejected too soon or too late');
+                    }
                 } else {
                     console.log('TECHIO> message Given data is ' + data + ' but it should be ' + expected);
                 }
