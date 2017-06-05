@@ -19,9 +19,9 @@ plan:
     statement: part8/statement.md
   - title: More pratice with promises
     statement: part9/statement.md
-  - title: The catch method
-    statement: part10/statement.md
   - title: Chaining the promises
+    statement: part10/statement.md
+  - title: Traps of promises
     statement: part11/statement.md
 projects:
   part1:
@@ -41,6 +41,9 @@ projects:
     runner: techio/node-npm-runner
   part9:
     root: /part9
+    runner: techio/node-npm-runner
+  part10:
+    root: /part10
     runner: techio/node-npm-runner
   part11:
     root: /part11
