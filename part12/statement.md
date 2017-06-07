@@ -42,7 +42,7 @@ promise
 
 In the first code, we call `then` with a success callback and an error callback. In the second code, we call `then` with a success callback and after that we call `catch` with an error callback. The difference is in the promise returned by the `then` function. In the second code, you are not calling `catch` on the original promise, you call `catch` on the promise returned by `then`. If a `then` has no error callback provided, it will not stop a rejected promise. So the promise will end in the `catch`. For a better understanding, take a look at this control flow diagram:
 
-![Control flow diagram](diagram.png)
+![Control flow diagram](diagram1.png) ![Control flow diagram](diagram2.png)
 
 Source: [Stackoverflow](https://stackoverflow.com/questions/24662289/when-is-thensuccess-fail-considered-an-antipattern-for-promises)
 
