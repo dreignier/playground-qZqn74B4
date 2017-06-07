@@ -23,6 +23,8 @@ plan:
     statement: part10/statement.md
   - title: Traps of promises
     statement: part11/statement.md
+  - title: The catch method
+    statement: part11/statement.md
 projects:
   part1:
     root: /part1
