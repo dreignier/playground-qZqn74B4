@@ -29,6 +29,12 @@ plan:
     statement: part13/statement.md
   - title: How to join promises
     statement: part14/statement.md
+  - title: A few tricks with promises
+    statement: part15/statement.md
+  - title: The last challenge
+    statement: part16/statement.md
+  - title: To go further
+    statement: part17/statement.md
 projects:
   part1:
     root: /part1
@@ -56,4 +62,10 @@ projects:
     runner: techio/node-npm-runner
   part14:
     root: /part14
+    runner: techio/node-npm-runner
+  part15:
+    root: /part15
+    runner: techio/node-npm-runner
+  part16:
+    root: /part16
     runner: techio/node-npm-runner
