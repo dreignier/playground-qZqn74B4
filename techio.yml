@@ -27,6 +27,8 @@ plan:
     statement: part12/statement.md
   - title: It's quizz time
     statement: part13/statement.md
+  - title: How to join promises
+    statement: part14/statement.md
 projects:
   part1:
     root: /part1
@@ -51,4 +53,7 @@ projects:
     runner: techio/node-npm-runner
   part11:
     root: /part11
+    runner: techio/node-npm-runner
+  part14:
+    root: /part14
     runner: techio/node-npm-runner
