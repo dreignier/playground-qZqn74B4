@@ -18,13 +18,13 @@ let p5 = new Promise(function(resolve, reject) {
     setTimeout(resolve, 800, 'p5');
 });
 
-let promise = Promise.all([p1.catch(), p2.catch(), p3.catch(), p4.catch(), p5.catch()]);
+let promise = Promise.all([p1.catch(function() {}), p2.catch(function() {}), p3.catch(function() {}), p4.catch(function() {}), p5.catch(function() {})]);
 
 promise
 
 .then(function(data) {
     data.forEach(function(data) {
-        cconsole.log(data);
+        console.log(data);
     });
 })
 

@@ -14,4 +14,4 @@ But what if you want to start multiple asynchronous jobs at once and you want re
 
 @[Promise.all with catch]({"stubs":["code3.js"], "command":"node code3.js", "project":"part14"})
 
-Calling `catch` without any parameter is the same as `catch(function() {})`. So in this example, we don't give the promises directly to `Promise.all`. We give the result of `p.catch`, this is an auto resolved promise so `Promise.all` won't stop. But you have to test yourself in the end the received data.
+So in this example, we don't give the promises directly to `Promise.all`. We give the result of `p.catch`, this is an auto resolved promise so `Promise.all` won't stop. But you have to test yourself in the end the received data.
