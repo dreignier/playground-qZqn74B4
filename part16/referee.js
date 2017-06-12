@@ -2,10 +2,10 @@ let job = require('code'),
     mark = require('mark');
 
 Promise.all([
-    testSuccess('1 jsmith USA John Smith jsmith@gmail.com'.split(' ')...),
-    testSuccess('2 kmartin France Kevin Martin darkwarrior73@msn.fr'.split(' ')...),
-    testSuccess('3 egringo Mexico Erico Gringo elgringo@gmail.com'.split(' ')...),
-    testSuccess('4 gkruger Germany Gunter Kruger guntertag@hotmail.com'.split(' ')...),
+    testSuccess.apply('1 jsmith USA John Smith jsmith@gmail.com'.split(' ')),
+    testSuccess.apply('2 kmartin France Kevin Martin darkwarrior73@msn.fr'.split(' ')),
+    testSuccess.apply('3 egringo Mexico Erico Gringo elgringo@gmail.com'.split(' ')),
+    testSuccess.apply('4 gkruger Germany Gunter Kruger guntertag@hotmail.com'.split(' ')),
     testError(5, 'Error central'),
     testError(6, 'Error db1'),
     testError(7, 'Error db2'),
@@ -23,6 +23,8 @@ Promise.all([
 
 
 function testSuccess(id, username, country, firstname, lastname, email) {
+    id = Number(id);
+
     return new Promise(function(resolve, reject) {
         let promise = job();
 

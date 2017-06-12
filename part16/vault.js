@@ -10,9 +10,11 @@ let database = {
 
 module.exports = function(id) {
     return new Promise(function(resolve, reject) {
+        let self = this;
+
         setTimeout(function() {
             if (database[id]) {
-                resolve(database[id].split(' ')...);
+                resolve.apply(self, database[id].split(' '));
             } else {
                 reject();
             }
