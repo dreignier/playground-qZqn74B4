@@ -10,15 +10,13 @@ let database = {
 
 module.exports = function(id) {
     return new Promise(function(resolve, reject) {
-        let self = this;
-
         setTimeout(function() {
             if (database[id]) {
                 let data = database[id].split(' ');
-                resolve.apply(self, {
+                resolve({
                     firstname: data[0],
                     lastname: data[1],
-                    email: data[1],
+                    email: data[2]
                 });
             } else {
                 reject();
