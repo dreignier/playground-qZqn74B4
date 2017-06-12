@@ -48,27 +48,27 @@ function testSuccess(id, username, country, firstname, lastname, email) {
             }
 
             if (data.username !== username) {
-                console.error('Test with username', username + ': The returned username is', data.username, 'but it should be', username);
+                console.error('Test with id', id + ': The returned username is', data.username, 'but it should be', username);
                 success = false;
             }
 
             if (data.country !== country) {
-                console.error('Test with country', country + ': The returned country is', data.country, 'but it should be', country);
+                console.error('Test with id', id + ': The returned country is', data.country, 'but it should be', country);
                 success = false;
             }
 
             if (data.firstname !== firstname) {
-                console.error('Test with firstname', firstname + ': The returned firstname is', data.firstname, 'but it should be', firstname);
+                console.error('Test with id', id + ': The returned firstname is', data.firstname, 'but it should be', firstname);
                 success = false;
             }
 
             if (data.lastname !== lastname) {
-                console.error('Test with lastname', lastname + ': The returned lastname is', data.lastname, 'but it should be', lastname);
+                console.error('Test with id', id + ': The returned lastname is', data.lastname, 'but it should be', lastname);
                 success = false;
             }
 
             if (data.email !== email) {
-                console.error('Test with email', email + ': The returned email is', data.email, 'but it should be', email);
+                console.error('Test with id', id + ': The returned email is', data.email, 'but it should be', email);
                 success = false;
             }
         })
