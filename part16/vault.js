@@ -14,7 +14,12 @@ module.exports = function(id) {
 
         setTimeout(function() {
             if (database[id]) {
-                resolve.apply(self, database[id].split(' '));
+                let data = database[id].split(' ');
+                resolve.apply(self, {
+                    firstname: data[0],
+                    lastname: data[1],
+                    email: data[1],
+                });
             } else {
                 reject();
             }

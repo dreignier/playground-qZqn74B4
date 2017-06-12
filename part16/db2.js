@@ -8,7 +8,11 @@ module.exports = function(id) {
 
         setTimeout(function() {
             if (database[id]) {
-                resolve.apply(self, database[id].split(' '));
+                let data = database[id].split(' ');
+                resolve.apply(self, {
+                    username: data[0],
+                    country: data[1]
+                });
             } else {
                 reject();
             }
