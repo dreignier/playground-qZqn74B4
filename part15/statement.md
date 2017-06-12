@@ -10,3 +10,9 @@ Sometimes you have an array of promise and you want to handle them one by one, s
 
 If you really have to, this is how you can test if an object is a promise : `obj instanceof Promise`.
 The problem is that this test only work with a real `Promise` object. It will not work with the Q library of with an Angular promise.
+
+# `Promise.race`
+
+`Promise.race` take an array of promises. The result is a new promise that resolves or rejects as soon as one of the promises in the given array resolved or rejects. 
+
+@[Promise.all example]({"stubs":["code2.js"], "command":"node code2.js", "project":"part15"})
