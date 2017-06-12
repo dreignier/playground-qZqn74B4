@@ -117,13 +117,13 @@ function testError(id, error) {
         promise
 
         .then(function() {
-            console.error('Test with id', id + ': The returned promise should be rejected with error', error);
+            console.error('Test with id', id + ': The returned promise should be rejected');
             reject();
         })
 
         .catch(function(data) {
             if (error !== data) {
-                console.error('Test with id', id + ': The returned promise should be rejected with error', error);
+                console.error('Test with id', id + ': The returned promise should be rejected with error', error, 'but it was', data);
                 reject();
             } else {
                 success = true;
