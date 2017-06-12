@@ -24,4 +24,4 @@ To achieve your task, you must use the differents provided services:
 
 Every services responds in 100ms, except `vault` (security for personal data is heavier, so it's slower. It will respond in 150ms). Your code must respond in 200ms. If multiple services are in error, returns the first error you found.
 
-@[Change the code to return a promise]({"stubs":["code.js"], "command":"node referee.js", "layout": "aside", "project":"part16"})
+@[Resolve the challenge]({"stubs":["code.js"], "command":"node referee.js", "layout": "aside", "project":"part16"})
