@@ -97,7 +97,7 @@ function testSuccess(id, username, country, firstname, lastname, email) {
                     resolve();
                 }
             }
-        }, 225);
+        }, 1000);
     });
 }
 
