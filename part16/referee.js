@@ -26,7 +26,7 @@ function testSuccess(id, username, country, firstname, lastname, email) {
     id = Number(id);
 
     return new Promise(function(resolve, reject) {
-        let promise = job();
+        let promise = job(id);
 
         if (!isPromise(promise)) {
             console.error('Test with id', id + ': Result is not a promise');
@@ -103,7 +103,7 @@ function testSuccess(id, username, country, firstname, lastname, email) {
 
 function testError(id, error) {
     return new Promise(function(resolve, reject) {
-        let promise = job();
+        let promise = job(id);
 
         if (!isPromise(promise)) {
             console.error('Test with id', id + ': Result is not a promise');
