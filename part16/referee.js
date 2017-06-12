@@ -23,7 +23,7 @@ Promise.all([
 
 
 function testSuccess(id, username, country, firstname, lastname, email) {
-    id = Number(id);
+    id = +id;
 
     return new Promise(function(resolve, reject) {
         let promise = job();
@@ -102,6 +102,8 @@ function testSuccess(id, username, country, firstname, lastname, email) {
 }
 
 function testError(id, error) {
+    id = +id;
+
     return new Promise(function(resolve, reject) {
         let promise = job();
 
