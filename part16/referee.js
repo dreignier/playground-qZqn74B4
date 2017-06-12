@@ -1,5 +1,5 @@
-let job = require('code'),
-    mark = require('mark');
+let job = require('./code'),
+    mark = require('./mark');
 
 Promise.all([
     testSuccess.apply('1 jsmith USA John Smith jsmith@gmail.com'.split(' ')),
