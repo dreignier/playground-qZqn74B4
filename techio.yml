@@ -1,7 +1,7 @@
-title : Javascript promises, mastering the asynchronous
+title : JavaScript promises, mastering the asynchronous
 
 plan:
-  - title: What is asynchronous in Javascript
+  - title: What is asynchronous in JavaScript
     statement: part1/statement.md
   - title: Why do we need asynchronous ?
     statement: part2/statement.md
