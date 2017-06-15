@@ -1,4 +1,4 @@
-First of all, to use the Promise class, all you have to do is this:
+First of all, to use the [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) class, all you have to do is this:
 
 ```javascript
 var promise = new Promise(function(resolve, reject) {
