@@ -1,4 +1,4 @@
-In Javascript, asynchronous execution comes in multiple forms. The simpliest example is this one:
+In JavaScript, asynchronous execution comes in multiple forms. The simpliest example is this one:
 
 @[Asynchronous code using setTimeout]({"stubs":["code1.js"], "command":"node code1.js", "project":"part1"})
 
@@ -10,7 +10,7 @@ What can we learn from this ? A simple thing: never trust the delay given to the
 
 MDN documentation of `setTimeout`: https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout
 
-The second example of asynchronous code in Javascript is by using `setInterval`:
+The second example of asynchronous code in JavaScript is by using `setInterval`:
 
 @[Asynchronous code using setInterval]({"stubs":["code3.js"], "command":"node code3.js", "project":"part1"})
 
@@ -18,7 +18,7 @@ The second example of asynchronous code in Javascript is by using `setInterval`:
 
 MDN documentation of `setInterval`: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval
 
-`setTimeout` and `setInterval` are the only native functions of the Javascript to execute some code asynchronously. But if you are familiar with Javascript, you have already dealt with asynchronous execution in various forms. It can happen in multiple situations (non exhaustive list):
+`setTimeout` and `setInterval` are the only native functions of the JavaScript to execute some code asynchronously. But if you are familiar with JavaScript, you have already dealt with asynchronous execution in various forms. It can happen in multiple situations (non exhaustive list):
 
 * Doing an http request
 * Any I/O operation when you are in a NodeJS environment
