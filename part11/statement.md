@@ -127,7 +127,7 @@ function test() {
 }
 ```
 
-A lot of pointless code here. You can fix it:
+A lot of pointless code here. You can fix it like this:
 
 ```javascript
 function test() {
