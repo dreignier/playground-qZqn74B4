@@ -4,7 +4,7 @@ The `catch` method on a promise is pretty simple because it is an alias for `the
 var promise = request();
 
 promise.catch(function(error) {
-    displayError(error); 
+    displayError(error);
 });
 
 // This is the same code as this:
@@ -36,7 +36,7 @@ promise
 })
 
 .catch(function(error) {
-    console.error(data); 
+    console.error(data);
 });
 ```
 
@@ -52,9 +52,10 @@ To understand how to use `then` and `catch` directly, you can think of it as pre
 ```javascript
 // Example 1
 try {
-    let promise = request();    
+    let promise = request();
 } catch (error) {
     console.error(error);
+    return;
 }
 console.log(data);
 
