@@ -1,4 +1,4 @@
-First of all, to use the Promise class, all you have to do is this:
+First of all, to use the [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) class, all you have to do is this:
 
 ```javascript
 var promise = new Promise(function(resolve, reject) {
@@ -6,7 +6,7 @@ var promise = new Promise(function(resolve, reject) {
 });
 ```
 
-But beware, this class is not available everywhere. If you want to use it in a browser, take a look at [caniuse](https://caniuse.com/#feat=promises). If you need to use the Promise class on internet explorer, you should use the [Q library](https://github.com/kriskowal/q). Q has multiple way to create a promise, but if you want to stick with the standard way to create a promise, you should use this one:
+But beware, this class is not available everywhere. If you want to use it in a browser, take a look at [caniuse](https://caniuse.com/#feat=promises). If you need to use the Promise class in Internet Explorer, you should use the [Q library](https://github.com/kriskowal/q). Q has multiple ways to create a promise, but if you want to stick with the standard way to create a promise, you should use this one:
 
 ```javascript
 var promise =  Q.Promise(function(resolve, reject) {
@@ -22,7 +22,7 @@ var promise =  $q(function(resolve, reject) {
 });
 ```
 
-In many recent framework, any asynchronous function will return a "Promise like" object:
+In many recent frameworks, any asynchronous function will return a "Promise like" object:
 
 ```javascript
 // Ajax request in jQuery:

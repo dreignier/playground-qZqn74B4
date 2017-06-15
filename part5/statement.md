@@ -1,16 +1,16 @@
-Javascript is full of challenges. Using asynchronous code can help you in many of them.
+JavaScript is full of challenges. Using asynchronous code can help you with many of them.
 
-# Better performances
+# Better performance
 
-Your code will be actually faster because you can do multiple thing at the same time. You can start multiples requests, processing some data while you are waiting for the end of an asynchronous code ... And because your user interface won't freeze anymore, the uers will think that your code is faster !
+Your code will be actually faster because you can do multiple things at the same time. You can start multiples requests, processing some data while you are waiting for some asynchronous code to complete ... And because your user interface won't freeze anymore, the uers will think that your code is faster !
 
 # Prepare for the future
 
-Browsers will abandon synchronous requests. We can't avoid that. One day it will just stop working. Some recents Javascript frameworks (like [AngularJS](https://angularjs.org/)) forbid synchronous requests. You have to be ready for the asynchronous.
+Browsers will abandon synchronous requests. We can't avoid that. One day it will just stop working. Some recent JavaScript frameworks (like [AngularJS](https://angularjs.org/)) forbid synchronous requests. You have to be ready for the asynchronous.
 
-# Is there any downsides ?
+# Are there any downsides ?
 
-Yes there is. As you know now, asynchronous code rely on giving callbacks. The problem is that everyone is doing as they want. If you know how to do asynchronous code with a framework like [jQuery](http://jquery.com/), you can't just use it directly with any other framework. But there is more downsides. Take a look at this code:
+Yes there are. As you know now, asynchronous code relies on providing callbacks. The problem is that everyone is implementing callbacks however they want. If you know how to do asynchronous code with a framework like [jQuery](http://jquery.com/), you can't just use it directly with any other framework. But there are more downsides. Take a look at this code:
 
 ```javascript
 function job1(callback) {
@@ -34,7 +34,7 @@ job1(function(data) {
 });
 ```
 
-In this code, we want to call `job2` after `job1`. If `job1` is a framejob function, you can't modify it. So you have to call `job2` in your callback directly. This kind of code will force a monolithic code because each callback have to know the next callback. But you can have far worse. We all know it. The pyramid of *DOOM*:
+In this code, we want to call `job2` after `job1`. If `job1` is a framejob function, you can't modify it. So you have to call `job2` in your callback directly. This kind of code will force a monolithic design because each callback must know the next callback. But it can get far worse. We all know it. The pyramid of *DOOM*:
 
 ```javascript
 job1(function() {
@@ -54,7 +54,7 @@ job1(function() {
 });
 ```
 
-The next big problem is when you want to join multiples asynchronous code. Imagine you want to execute some code when `job1`and `job2` are done. You'll code something like this:
+The next big problem comes when you want to join multiple asynchronous calls. Imagine you want to execute some code when `job1`and `job2` are done. You'll code something like this:
 
 ```javascript
 var counter = 0;
@@ -84,4 +84,4 @@ function done() {
 }
 ```
 
-With more and more asynchronous codes and features in the recents frameworks, we need something to rule it. And here comes our savior: the Promise class.
+With more and more asynchronous code and features in recent frameworks, we need something to manage it. And here comes our savior: the Promise class.

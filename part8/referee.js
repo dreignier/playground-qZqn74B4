@@ -22,10 +22,10 @@ if (!promise) {
 
             if (time < 1800) {
                 success = false;
-                console.log('TECHIO> message Promise resolved to early');
+                console.log('TECHIO> message Promise resolved too early');
             } else if (time > 2200) {
                 success = false;
-                console.log('TECHIO> message Promise resolved to late');
+                console.log('TECHIO> message Promise resolved too late');
             }
         }
 

@@ -63,7 +63,7 @@ promise
 .catch(function(error) {
     console.log(error);
 
-    return 'Error catched';
+    return 'Error caught';
 })
 
 .then(function(data) {
@@ -78,12 +78,12 @@ promise
 ```
 
 ?[What is the output of the code above ?]
-- [ ] error, success, Error catched
+- [ ] error, success, Error caught
 - [ ] success, success
 - [ ] success, error, success, error
-- [X] success, error, Error catched
-- [ ] error, Error catched, success
-- [ ] error, Error catched, success, error
+- [X] success, error, Error caught
+- [ ] error, Error caught, success
+- [ ] error, Error caught, success, error
 - [ ] success, error, error
 - [ ] success, success, success
 
@@ -135,7 +135,7 @@ promise
 .catch(function(error) {
     console.log(error);
 
-    return 'Error catched';
+    return 'Error caught';
 })
 
 .then(function(data) {
@@ -154,9 +154,9 @@ promise
 ```
 
 ?[What is the output of the code above ?]
-- [ ] error, error, Error catched, Error: test
-- [ ] success, success, Error catched, Success: Test
-- [X] success, Defeat, error, Error catched, Success: test
-- [ ] error, Error Catched, Success: test
-- [ ] success, Defeat, error, Error catched, Error: test
+- [ ] error, error, Error caught, Error: test
+- [ ] success, success, Error caught, Success: Test
+- [X] success, Defeat, error, Error caught, Success: test
+- [ ] error, Error caught, Success: test
+- [ ] success, Defeat, error, Error caught, Error: test
 - [ ] success, error, Defeat, Success: test
