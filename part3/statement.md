@@ -1,6 +1,6 @@
 It's time to test if you are really listening.
 
-?[What is 2 natives functions to run a code asynchronously in Javascript ?]
+?[What are 2 native functions to run code asynchronously in JavaScript ?]
 - [ ] timeout
 - [X] setTimeout
 - [ ] startInterval
