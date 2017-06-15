@@ -1,4 +1,4 @@
-Javascript is full of challenges. Using asynchronous code can help you with many of them.
+JavaScript is full of challenges. Using asynchronous code can help you with many of them.
 
 # Better performance
 
@@ -6,7 +6,7 @@ Your code will be actually faster because you can do multiple things at the same
 
 # Prepare for the future
 
-Browsers will abandon synchronous requests. We can't avoid that. One day it will just stop working. Some recent Javascript frameworks (like [AngularJS](https://angularjs.org/)) forbid synchronous requests. You have to be ready for the asynchronous.
+Browsers will abandon synchronous requests. We can't avoid that. One day it will just stop working. Some recent JavaScript frameworks (like [AngularJS](https://angularjs.org/)) forbid synchronous requests. You have to be ready for the asynchronous.
 
 # Are there any downsides ?
 
