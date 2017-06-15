@@ -12,7 +12,7 @@ let promise = array.reduce(function(previous, current) {
             return previousData + ' ' + currentData;
         });
     });
-}, Promise.resolve('')); // We start with an auto resolved promise to start the chain
+}, Promise.resolve('')); // We start with an auto-resolved promise to start the chain
 
 promise
 
