@@ -62,7 +62,6 @@ setTimeout(function() {
     }
 
     console.log('TECHIO> success ' + success);
-    process.exit();
 }, 6000);
 
 require('./code.js')(callback1, callback2);
