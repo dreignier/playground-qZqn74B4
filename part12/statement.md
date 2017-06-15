@@ -50,7 +50,7 @@ Source: [Stackoverflow](https://stackoverflow.com/questions/24662289/when-is-the
 To understand how to use `then` and `catch` directly, you can think of it as pretty similar to using `try { ... } catch { ... }`. Let's take the 2 examples and express them in "pseudo-synchronous code"
 
 ```javascript
-// Code 1
+// Example 1
 try {
     let promise = request();    
 } catch (error) {
@@ -58,7 +58,7 @@ try {
 }
 console.log(data);
 
-// Code 2
+// Example 2
 try {
     let promise = request();
     console.log(data);
