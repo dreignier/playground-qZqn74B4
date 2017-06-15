@@ -94,7 +94,7 @@ if (typeof job === 'object' && typeof job.then === 'function') {
 }
 ```
 
-If you want to create an auto-resolved promise with a simple value, use `[Promise.resvole](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve)`:
+If you want to create an auto-resolved promise with a simple value, use [`Promise.resvole`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve):
 
 ```javascript
 function job() {
@@ -106,7 +106,7 @@ function job() {
 }
 ```
 
-And if you want to create an auto-rejected promise, use `[Promise.reject](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject)`.
+And if you want to create an auto-rejected promise, use [`Promise.reject`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject).
 
 # The forgotten promise
 
