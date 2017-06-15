@@ -5,7 +5,7 @@ plan:
     statement: part1/statement.md
   - title: Why do we need asynchronous ?
     statement: part2/statement.md
-  - title: Quick quizz
+  - title: Quick quiz
     statement: part3/statement.md
   - title: Some pratice
     statement: part4/statement.md
@@ -13,7 +13,7 @@ plan:
     statement: part5/statement.md
   - title: The Promise class
     statement: part6/statement.md
-  - title: Your first codes with promises
+  - title: Your first code with promises
     statement: part7/statement.md
   - title: It's time to pratice with promises
     statement: part8/statement.md
@@ -25,7 +25,7 @@ plan:
     statement: part11/statement.md
   - title: The catch method
     statement: part12/statement.md
-  - title: It's quizz time
+  - title: It's quiz time
     statement: part13/statement.md
   - title: How to join promises
     statement: part14/statement.md
