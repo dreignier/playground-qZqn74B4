@@ -1,4 +1,4 @@
-When you deal with promises chaining, you must avoid some traps.
+When you deal with promise chaining, you must avoid some traps.
 
 # The broken chain
 
@@ -22,17 +22,17 @@ You should write this:
 
 ```javascript
 function test() {
-    return job.then(function(data) {
+    return job().then(function(data) {
         doSomething(data);
     });
 }
 ```
 
-But beware, something you must break the chain ! Because maybe `doSomething` is an asynchronous job but you don't want to slow the promise chain with it. Just be carefull and be sure of what you are doing when you break a promise chain.
+But beware, sometimes you must break the chain ! For example, maybe `doSomething` is an asynchronous job but you don't want to slow the promise chain with it. Just be carefull and be sure of what you are doing when you break a promise chain.
 
 # The pyramid of doom
 
-Sometime you write something like this:
+You maight be tempted to write something like this:
 
 ```javascript
 function test() {
@@ -48,7 +48,7 @@ function test() {
 }
 ```
 
-This code is wrong. Because the result of your function is `job().then` result. You broke the chain again. Use the promises chain feature:
+This code is wrong. Because the result of your function is `job().then` result. You broke the chain again. Use the promise chaining feature:
 
 ```javascript
 function test() {
@@ -74,7 +74,7 @@ function test() {
 
 # The ghost promise
 
-As a rule of thumb: when a function can return a promise, *ALWAYS* return a promise. Or you'll have this ugly codes everywhere:
+As a rule of thumb: when a function can return a promise, *ALWAYS* return a promise. Otherwise you'll have this ugly code everywhere:
 
 ```javascript
 function job() {
@@ -94,19 +94,19 @@ if (typeof job === 'object' && typeof job.then === 'function') {
 }
 ```
 
-If you want to create an auto resolved promise with a simple value, use `Promise.resvole`:
+If you want to create an auto-resolved promise with a simple value, use `[Promise.resvole](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve)`:
 
 ```javascript
 function job() {
     if (test) {
         return aNewPromise();
     } else {
-        return Promise.resolve(42); // return an anto resolved promise with `42` in data.
+        return Promise.resolve(42); // return an anto-resolved promise with `42` in data.
     }
 }
 ```
 
-And if you want to create an auto rejected promise, use `Promise.rejected`.
+And if you want to create an auto-rejected promise, use `[Promise.reject](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject)`.
 
 # The forgotten promise
 
@@ -127,7 +127,7 @@ function test() {
 }
 ```
 
-A lot of pointless code here. Fix it:
+A lot of pointless code here. You can fix it:
 
 ```javascript
 function test() {
