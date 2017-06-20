@@ -1,4 +1,4 @@
-Now we have to deal with the difficult part of promises: chaining. Chaining promises is the very reason we have promises in the first place: a proper way telling JavaScript what to do after an asynchronous task is done, avoiding the pyramid of doom inthe previous lessons.
+Now we have to deal with the difficult part of promises: chaining. Chaining promises is the very reason we have promises in the first place: a proper way telling JavaScript the next thing to do after an asynchronous task is done, thus avoiding the pyramid of doom we saw in the previous lessons.
 
 Did you ask yourself: what is the result of the `then` method ? Here is the answer: it's a promise. But what promise is it ? It can be the promise you want. It's easier to explain with an example so take a look at the following code and run it.
 
