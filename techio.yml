@@ -71,3 +71,4 @@ projects:
   part16:
     root: /part16
     runner: techio/node-npm-runner
+    buildCommand: "chmod +x build.sh && ./build.sh"

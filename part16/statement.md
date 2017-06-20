@@ -27,3 +27,5 @@ Every service responds in 100ms, except `vault`. (Security for personal data is 
 @[Resolve the challenge]({"stubs":["code.js"], "command":"node referee.js code", "layout": "aside", "project":"part16"})
 
 *If you have a hard time, the next lesson contains the solution.*
+
+@[Run this to show the solution (Don't cheat!)]({"command":"techio-viewer-code solution.js javascript", "project":"part16"})
