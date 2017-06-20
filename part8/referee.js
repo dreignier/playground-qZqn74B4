@@ -2,6 +2,9 @@ let start = now(),
     promise = require('./code.js')(),
     success = true
     called = false;
+let hints = {
+    createPromise: false
+};
 
 if (!promise) {
     success = false;
@@ -9,10 +12,17 @@ if (!promise) {
 } else if (!isObject(promise)) {
     success = false;
     console.log('TECHIO> message The result is not an object');
-    console.log('TECHIO> message -c "Hints" Use `new Promise` to create a promise.');
+    if(!hints.createPromise) {
+        hints.createPromise = true;
+        console.log('TECHIO> message -c "Hints" Use `new Promise` to create a promise.');
+    }
 } else if (!isFunction(promise.then)) {
     success = false;
     console.log('TECHIO> message The result is not a promise');
+    if(!hints.createPromise) {
+        hints.createPromise = true;
+        console.log('TECHIO> message -c "Hints" Use `new Promise` to create a promise.');
+    }
 } else {
     promise.then(function(data) {
         if (data !== 'hello world') {

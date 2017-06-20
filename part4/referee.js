@@ -7,6 +7,11 @@ function now() {
 let counter1 = 0,
     callback1Timer = now();
 
+let hints = {
+    cb1Early: false,
+    cb2Early: false
+}
+
 function callback1() {
     if (counter1) {
         success = false;
@@ -20,7 +25,10 @@ function callback1() {
     if (time < 1800) {
         success = false;
         console.log('TECHIO> message callback1 called too early');
-        console.log('TECHIO> message -c "Hints" Use setTimeout(callback, delay) to call callback1 with a delay.');
+        if(!hints.cb1Early) {
+            hints.cb1Early = true;
+            console.log('TECHIO> message -c "Hints" Use setTimeout(callback, delay) to call callback1 with a delay.');
+        }
     } else if (time > 2200) {
         success = false;
         console.log('TECHIO> message callback1 called too late');
@@ -43,7 +51,10 @@ function callback2() {
     if (time < 800) {
         success = false;
         console.log('TECHIO> message callback2 called too early');
-        console.log('TECHIO> message -c "Hints" Use setTimeout(callback, delay) to call callback2 with a delay.');
+        if(!hints.cb2Early) {
+            hints.cb2Early = true;
+            console.log('TECHIO> message -c "Hints" Use setTimeout(callback, delay) to call callback2 with a delay.');
+        }
     } else if (time > 1200) {
         success = false;
         console.log('TECHIO> message callback2 called too late');
