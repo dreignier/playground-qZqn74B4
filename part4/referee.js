@@ -8,6 +8,8 @@ let counter1 = 0,
     callback1Timer = now();
 
 function callback1() {
+    console.log('TECHIO> message callback1 called');
+
     if (counter1) {
         success = false;
         console.log('TECHIO> message callback1 called more than one time');
@@ -30,6 +32,8 @@ let counter2 = 0,
     callback2Timer = now();
 
 function callback2() {
+    console.log('TECHIO> message callback2 called');
+
     if (counter2 >= 3) {
         success = false;
         console.log('TECHIO> message callback2 called more than three times');
@@ -59,6 +63,10 @@ setTimeout(function() {
     if (counter2 < 3) {
         success = false;
         console.log('TECHIO> message callback2 called only ' + counter2 + ' times');
+    }
+
+    if (success) {
+        console.log('TECHIO> message Congratulation !');
     }
 
     console.log('TECHIO> success ' + success);

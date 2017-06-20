@@ -3,7 +3,7 @@ title : JavaScript promises, mastering the asynchronous
 plan:
   - title: What is asynchronous in JavaScript
     statement: part1/statement.md
-  - title: Why do we need asynchronous ?
+  - title: Why do we need asynchronous?
     statement: part2/statement.md
   - title: Quick quiz
     statement: part3/statement.md
