@@ -25,3 +25,5 @@ To achieve your task, you must use the different provided services:
 Every service responds in 100ms, except `vault`. (Security for personal data is heavier, so it's slower. It will respond in 150ms.) Your code must respond in 200ms. If multiple services are in error, return the first error you found.
 
 @[Resolve the challenge]({"stubs":["code.js"], "command":"node referee.js", "layout": "aside", "project":"part16"})
+
+*If you have a hard time, the next lesson contains the solution.*
