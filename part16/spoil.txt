@@ -1,2 +1,0 @@
-This is the solution of the previous lesson.
-Don't look at solution.js if you don't want to be spoiled.

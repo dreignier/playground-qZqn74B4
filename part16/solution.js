@@ -5,51 +5,54 @@ let central = require('./central'),
     vault = require('./vault'),
     mark = require('./mark');
 
-let dbs = {
-    db1: db1,
-    db2: db2,
-    db3: db3
-};
-
 module.exports = function(id) {
-    return new Promise(function(resolve, reject) {
-        Promise.all([
-            central(id)
+    // Solution hidden. Unfold this block to see it.
+    { // autofold
+        let dbs = {
+            db1: db1,
+            db2: db2,
+            db3: db3
+        };
 
-            .catch(function() {
-                return Promise.reject('Error central');
-            })
-
-            .then(function(db) {
-                return dbs[db](id)
+        return new Promise(function(resolve, reject) {
+            Promise.all([
+                central(id)
 
                 .catch(function() {
-                    return Promise.reject('Error ' + db);
+                    return Promise.reject('Error central');
                 })
-            }),
 
-            vault(id)
+                .then(function(db) {
+                    return dbs[db](id)
 
-            .catch(function() {
-                return Promise.reject('Error vault');
+                    .catch(function() {
+                        return Promise.reject('Error ' + db);
+                    })
+                }),
+
+                vault(id)
+
+                .catch(function() {
+                    return Promise.reject('Error vault');
+                })
+            ])
+
+            .then(function(data) {
+                mark(id).catch(function() {});
+
+                resolve({
+                    id: id,
+                    username: data[0].username,
+                    country: data[0].country,
+                    firstname: data[1].firstname,
+                    lastname: data[1].lastname,
+                    email: data[1].email
+                });
             })
-        ])
 
-        .then(function(data) {
-            mark(id).catch(function() {});
-
-            resolve({
-                id: id,
-                username: data[0].username,
-                country: data[0].country,
-                firstname: data[1].firstname,
-                lastname: data[1].lastname,
-                email: data[1].email
+            .catch(function(error) {
+                reject(error);
             });
-        })
-
-        .catch(function(error) {
-            reject(error);
         });
-    });
+    }
 };
