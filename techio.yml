@@ -33,8 +33,6 @@ plan:
     statement: part15/statement.md
   - title: The last challenge
     statement: part16/statement.md
-  - title: The last challenge (solution)
-    statement: part16/solution.md
   - title: To go further
     statement: part17/statement.md
 projects:
