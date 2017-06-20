@@ -1,4 +1,4 @@
-let job = require('./code'),
+let job = require('./' + process.argv[2]),
     mark = require('./mark');
 
 Promise.all([
