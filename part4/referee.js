@@ -20,6 +20,7 @@ function callback1() {
     if (time < 1800) {
         success = false;
         console.log('TECHIO> message callback1 called too early');
+        console.log('TECHIO> message -c "Hints" Use setTimeout(callback, delay) to call callback1 with a delay.');
     } else if (time > 2200) {
         success = false;
         console.log('TECHIO> message callback1 called too late');
@@ -42,6 +43,7 @@ function callback2() {
     if (time < 800) {
         success = false;
         console.log('TECHIO> message callback2 called too early');
+        console.log('TECHIO> message -c "Hints" Use setTimeout(callback, delay) to call callback2 with a delay.');
     } else if (time > 1200) {
         success = false;
         console.log('TECHIO> message callback2 called too late');
@@ -61,6 +63,7 @@ setTimeout(function() {
         console.log('TECHIO> message callback2 called only ' + counter2 + ' times');
     }
 
+    console.log('TECHIO> message Success! callback1 and callback2 were both called on time 🎉');
     console.log('TECHIO> success ' + success);
     process.exit();
 }, 6000);

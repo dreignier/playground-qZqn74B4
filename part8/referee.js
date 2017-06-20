@@ -9,6 +9,7 @@ if (!promise) {
 } else if (!isObject(promise)) {
     success = false;
     console.log('TECHIO> message The result is not an object');
+    console.log('TECHIO> message -c "Hints" Use `new Promise` to create a promise.');
 } else if (!isFunction(promise.then)) {
     success = false;
     console.log('TECHIO> message The result is not a promise');
@@ -39,6 +40,7 @@ setTimeout(function() {
         console.log('TECHIO> message Promise never resolved');
     }
 
+    console.log('TECHIO> message Success! All promises were resolved correctly 🎉');
     console.log('TECHIO> success ' + success);
 }, 2300);
 
