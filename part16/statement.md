@@ -28,4 +28,4 @@ Every service responds in 100ms, except `vault`. (Security for personal data is 
 
 If you have a hard time with this challenge, take a peek at the solution below:
 
-@[Run this to show the solution (Don't cheat!)]({"command":"techio-viewer-code solution.js javascript", "project":"part16"})
+@[Run this to show the solution (No cheating! 😊 )]({"command":"techio-viewer-code solution.js javascript", "project":"part16"})
