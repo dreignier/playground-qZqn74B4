@@ -2,7 +2,7 @@ Sometimes you have multiple asynchronous tasks to perform and you have to start 
 
 @[Promise.all example]({"stubs":["code1.js"], "command":"node code1.js", "project":"part14"})
 
-As you can see, `Promise.all` returns a promise. The received data is an array containing the data of each given promise. The promise is resvoled when all given promises are resolved.
+As you can see, `Promise.all` returns a promise. The received data is an array containing the data of each given promise. *The promise is resvoled when all given promises are resolved*.
 
 But beware, `Promise.all` has a fail-fast behaviour. If a given promise is rejected, the resulting promise of `Promise.all` will be rejected at this exact moment. It will not wait for the other promises to complete, and the only received data is the error of the rejected request. See the following example for a better understanding.
 

@@ -3,7 +3,7 @@ title : JavaScript promises, mastering the asynchronous
 plan:
   - title: What is asynchronous in JavaScript
     statement: part1/statement.md
-  - title: Why do we need asynchronous ?
+  - title: Why do we need asynchronous?
     statement: part2/statement.md
   - title: Quick quiz
     statement: part3/statement.md
@@ -33,8 +33,6 @@ plan:
     statement: part15/statement.md
   - title: The last challenge
     statement: part16/statement.md
-  - title: The last challenge (solution)
-    statement: part16/solution.md
   - title: To go further
     statement: part17/statement.md
 projects:
@@ -71,3 +69,4 @@ projects:
   part16:
     root: /part16
     runner: techio/node-npm-runner
+    buildCommand: "chmod +x build.sh && ./build.sh"

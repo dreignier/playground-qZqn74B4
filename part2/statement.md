@@ -1,4 +1,4 @@
-Asynchronous execution is not just an obscure JavaScript magicians concept. We need it for a good reason. Take the following example.
+Asynchronous execution is not just an obscure JavaScript magicians concept. We need it for a good reason. Take the following example. Click on the "Run my code" button to start the demo.
 
 Both buttons do the same job: an http request is done to get a distant file and then print it. The request is very slow on purpose (the server will wait 5 seconds to respond).
 

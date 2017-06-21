@@ -13,6 +13,8 @@ let hints = {
 }
 
 function callback1() {
+    console.log('TECHIO> message callback1 called');
+
     if (counter1) {
         success = false;
         console.log('TECHIO> message callback1 called more than one time');
@@ -39,6 +41,8 @@ let counter2 = 0,
     callback2Timer = now();
 
 function callback2() {
+    console.log('TECHIO> message callback2 called');
+
     if (counter2 >= 3) {
         success = false;
         console.log('TECHIO> message callback2 called more than three times');
@@ -74,7 +78,9 @@ setTimeout(function() {
         console.log('TECHIO> message callback2 called only ' + counter2 + ' times');
     }
 
-    console.log('TECHIO> message Success! callback1 and callback2 were both called on time 🎉');
+    if (success) {
+        console.log('TECHIO> message Success! callback1 and callback2 were both called on time 🎉');
+    }
     console.log('TECHIO> success ' + success);
     process.exit();
 }, 6000);

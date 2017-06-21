@@ -1,4 +1,4 @@
-The `catch` method on a promise is pretty simple because it is an alias for `then(null, callback)`.
+The `catch` method on a promise is pretty simple because it is an alias for `then(null, errorCallback)`.
 
 ```javascript
 var promise = request();

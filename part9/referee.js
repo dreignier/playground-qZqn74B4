@@ -7,7 +7,7 @@ test('test', 0, false, 'error')
 })
 
 .then(function() {
-    return test(6, 2000, true, 'even');
+    return test(6, 2000, false, 'even');
 })
 
 .then(function() {
@@ -45,7 +45,7 @@ function test(value, delay, resolved, expected) {
                         console.log('TECHIO> message Promise is resolved too soon or too late');
                     }
                 } else {
-                    console.log('TECHIO> message Given data is ' + data + ' but it should be ' + expected);
+                    console.log('TECHIO> message Given data is "' + data + '"" but it should be "' + expected + '"');
                 }
             } else {
                 console.log('TECHIO> message Promise is resolved but it should be rejected');
@@ -61,7 +61,7 @@ function test(value, delay, resolved, expected) {
                         console.log('TECHIO> message Promise is rejected too soon or too late');
                     }
                 } else {
-                    console.log('TECHIO> message Given data is ' + data + ' but it should be ' + expected);
+                    console.log('TECHIO> message Given data is "' + data + '" but it should be "' + expected + '"');
                 }
             } else {
                 console.log('TECHIO> message Promise is rejected but it should be resolved');
