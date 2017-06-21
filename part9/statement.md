@@ -7,3 +7,5 @@ Let's do a harder exercice. In this code, your function receives a parameter `da
 @[Change the code to return a promise]({"stubs":["code.js"], "command":"node referee.js", "layout": "aside", "project":"part9"})
 
 > Hint: When you code a function returning a promise, always return a promise. If you want to handle an error, just return a promise and reject it. You will have more maintenable code like this.
+
+> Hint: use `isNaN(data)` to check if `data` is **not** a number
