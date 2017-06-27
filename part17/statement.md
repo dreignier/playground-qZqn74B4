@@ -5,4 +5,4 @@ If you want to learn more about JavaScript promises, you can follow these links:
 * [The NodeJS async module](https://github.com/caolan/async)
 * JavaScript async and await playground (coming soon)
 
-Congratulations, you now know how to use promises in JavaScript !
+Congratulations, you now know how to use promises in JavaScript!

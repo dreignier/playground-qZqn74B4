@@ -16,7 +16,7 @@ function test() {
 }
 ```
 
-In this code, we add a callback on the promise. Then we return the promise. The problem is that we return the initial promise. Not the result of `promise.then`. The result of `promise.then` is a lost promise because no one can interact with it.
+In this code, we add a callback on the promise, then we return the promise. The problem is that we return the initial promise. Not the result of `promise.then`. The result of `promise.then` is a lost promise because no one can interact with it.
 
 You should write this:
 
@@ -28,11 +28,11 @@ function test() {
 }
 ```
 
-But beware, sometimes you must break the chain ! For example, maybe `doSomething` is an asynchronous job but you don't want to slow the promise chain with it. Just be carefull and be sure of what you are doing when you break a promise chain.
+Beware: Sometimes you must break the chain! For example, maybe `doSomething` is an asynchronous job but you don't want to slow the promise chain with it. Just be careful and be sure of what you are doing when you break a promise chain.
 
 # The pyramid of doom
 
-You maight be tempted to write something like this:
+You might be tempted to write something like this:
 
 ```javascript
 function test() {
@@ -48,7 +48,7 @@ function test() {
 }
 ```
 
-This code is wrong. Because the result of your function is `job().then` result. You broke the chain again. Use the promise chaining feature:
+However, this code is wrong because the result of your function is `job().then` result. You broke the chain again. Use the promise chaining feature:
 
 ```javascript
 function test() {
@@ -74,7 +74,7 @@ function test() {
 
 # The ghost promise
 
-As a rule of thumb: when a function can return a promise, *ALWAYS* return a promise. Otherwise you'll have this ugly code everywhere:
+As a rule of thumb: When a function can return a promise, *ALWAYS* return a promise. Otherwise you'll have this ugly code everywhere:
 
 ```javascript
 function job() {
@@ -106,7 +106,7 @@ function job() {
 }
 ```
 
-And if you want to create an auto-rejected promise, use [`Promise.reject`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject).
+If you want to create an auto-rejected promise, use [`Promise.reject`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject).
 
 # The forgotten promise
 
@@ -127,7 +127,7 @@ function test() {
 }
 ```
 
-A lot of pointless code here. You can fix it like this:
+A lot of pointless code above. You can fix it like this:
 
 ```javascript
 function test() {

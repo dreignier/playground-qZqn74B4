@@ -13,7 +13,7 @@ promise.then(null, function(error) {
 });
 ```
 
-Why is `catch` so important ? Because combined with the chaining feature of promises, it become very strong. But before we continue, you have to learn the differences between these 2 examples:
+Why is `catch` so important? Because combined with the chaining feature of promises, it becomes very strong. Before we continue though, you have to learn the differences between these 2 examples:
 
 ```javascript
 // Example 1
@@ -68,4 +68,4 @@ try {
 }
 ```
 
-The difference is easy to understand when you express the code in "pseudo-synchronous code". You can use the promise's `catch` like a normal `catch`. And everything is simple to understand. Keep in mind that a `then` callback can crash. It can throw an error (with an explicit throw or by trying to reach a property of a `null` variable). The `catch` method will also catch these crashes. Repeat to yourself: the promise's `catch` method is like a normal `catch`.
+The difference is easy to understand when you express the code in "pseudo-synchronous code". You can use the promise's `catch` like a normal `catch` and everything is simple to understand. Keep in mind that a `then` callback can crash. It can throw an error (with an explicit throw or by trying to reach a property of a `null` variable). The `catch` method will also catch these crashes. Repeat to yourself: the promise's `catch` method is like a normal `catch`.

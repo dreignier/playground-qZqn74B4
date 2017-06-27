@@ -1,4 +1,4 @@
-It's time to test if you are really listening.
+It's time to test if you are really listening. 😉
 
 ?[What are 2 native functions to run code asynchronously in JavaScript ?]
 - [ ] timeout
@@ -25,7 +25,7 @@ fs.readFile('test.txt', 'utf8', function(error, data) {
 console.log('3');
 ```
 
-?[If you run the code above, what is the output ?]
+?[What is the output of the code above?]
 - [ ] 1 2 3
 - [X] 1 3 2
 - [ ] 2 1 3
@@ -33,7 +33,7 @@ console.log('3');
 - [ ] 3 2 1
 - [ ] 3 1 2
 
-?[What is the function to stop an interval timer ?]
+?[What is the function to stop an interval timer?]
 - [ ] stopTimer
 - [X] clearInterval
 - [ ] shutdownTimer
