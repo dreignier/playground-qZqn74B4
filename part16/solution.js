@@ -26,7 +26,7 @@ module.exports = function(id) { // autofold
 
                 .catch(function() {
                     return Promise.reject('Error ' + db);
-                })
+                });
             }),
 
             vault(id)
