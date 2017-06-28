@@ -1,4 +1,4 @@
-Are you really listening ? Let's see.
+Are you really listening? Let's see.
 
 ```javascript
 function job() {
@@ -77,7 +77,7 @@ promise
 });
 ```
 
-?[What is the output of the code above ?]
+?[What is the output of the code above?]
 - [ ] error, success, Error caught
 - [ ] success, success
 - [ ] success, error, success, error
@@ -153,7 +153,7 @@ promise
 });
 ```
 
-?[What is the output of the code above ?]
+?[What is the output of the code above?]
 - [ ] error, error, Error caught, Error: test
 - [ ] success, success, Error caught, Success: Test
 - [X] success, Defeat, error, Error caught, Success: test
