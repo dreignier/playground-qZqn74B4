@@ -2,7 +2,7 @@ JavaScript is full of challenges. Using asynchronous code can help you with many
 
 # Better performance
 
-Your code will be actually faster because you can perform other tass while waiting for an asynchronous function to finish running. You can also start multiples requests and processing data while you are waiting for some asynchronous code to complete.  On top of that, your user interface won't freeze anymore and the users will think that your code is faster!
+Your code will actually be faster because you can perform other tasks while waiting for an asynchronous function to finish running. You can also start multiples requests and processing data while you are waiting for some asynchronous code to complete.  On top of that, your user interface won't freeze anymore and the users will think that your code is faster!
 
 # Prepare for the future
 

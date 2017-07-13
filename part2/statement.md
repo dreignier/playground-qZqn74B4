@@ -8,4 +8,4 @@ One button executes synchronous code and the other button executes asynchronous 
 
 The example above uses [jQuery](http://jquery.com/) to perform the http request.
 
-In the future, synchronous http requests will be not supported by browsers. Dealing with asynchronous execution is *a must have* in the JavaScript world.
+In the future, synchronous http requests will not be supported by browsers. Dealing with asynchronous execution is *a must have* in the JavaScript world.
