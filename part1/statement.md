@@ -1,4 +1,4 @@
- In JavaScript, asynchronous execution comes in multiple forms. The simpliest example is shown below:
+ In JavaScript, asynchronous execution comes in multiple forms. The simplest example is shown below:
 
 @[Asynchronous code using setTimeout]({"stubs":["code1.js"], "command":"node code1.js", "project":"part1"})
 
