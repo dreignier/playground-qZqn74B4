@@ -34,7 +34,7 @@ job1(function(data) {
 });
 ```
 
-In this code, we want to call `job2` after `job1`. If `job1` is a framejob function, you can't modify it. Therefore, you have to call `job2` in your callback directly. This kind of code will force a monolithic design because each callback must know the next callback. But it can get far worse; we all know it. The pyramid of *DOOM*:
+In this code, we want to call `job2` after `job1`. `job1` takes a callback as argument. Therefore, you have to call `job2` in your callback directly. This kind of code will force a monolithic design because each callback must know the next callback. But it can get far worse; we all know it. The pyramid of *DOOM*:
 
 ```javascript
 job1(function() {
