@@ -1,4 +1,4 @@
-How can the Promise class can help us? First off, everyone uses it because it is now the standard way to deal with asynchronous code... so we have to use it. Following the standard is always the best thing to do. Now that we know that, here is a simple example of how to use a promise.
+How can the Promise class help us? First off, everyone uses it because it is now the standard way to deal with asynchronous code... so we have to use it. Following the standard is always the best thing to do. Now that we know that, here is a simple example of how to use a promise.
 
 @[First promise example]({"stubs":["code1.js"], "command":"node code1.js", "project":"part7"})
 
